@@ -310,7 +310,7 @@ export default function App() {
                 Rick Magarro
               </h1>
               <h2 className="text-base font-medium text-slate-200 mb-4 leading-snug">
-                Global IT Operations | Cloud Infrastructure & Automation | Senior Systems Engineer
+                IAM & Systems Engineering | Senior Systems Engineer
               </h2>
               <p className="text-sm leading-relaxed max-w-xs">
                 Over 15 years building secure, scalable IT systems, with a focus on identity and access management, compliance, and automating the operations that slow teams down.
