@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "CV Portfolio"
+version = "1.0.0"
+id = "artifacts/cv-portfolio"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 26199
+
+[services.development]
+run = "pnpm --filter @workspace/cv-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/cv-portfolio", "run", "build" ]
+publicDir = "artifacts/cv-portfolio/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "26199"
+BASE_PATH = "/"
